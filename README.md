@@ -9,3 +9,5 @@ $ \password
 <h1> show all tables in a database</h1>
  $ \dt
 
+<h1> connect to the database</h1>
+ $ \c database_name
