@@ -1,14 +1,19 @@
 # postgres-CLI-command
 
 <h1> start postgres</h1>
-`$ sudo -u postgres psql postgres </br>`
+
+```shell
+$ sudo -u postgres psql postgres
+```
 
 <h1>  set new password</h1>
+
 ```
 $ \password
 ```
 <h1> show all database</h1>
- $ \l
+
+$ \l
  
  <h1> connect to the database</h1>
  $ \c database_name
