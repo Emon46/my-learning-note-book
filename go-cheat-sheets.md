@@ -1,7 +1,7 @@
 # go-cheat-sheets
 
 ---
-## vendor initialize & update pkg
+## mod initialize & update pkg
 ```
 $ go mod init
 $  go mod tidy 
