@@ -25,7 +25,7 @@ $ docker build . -t <repository_name>:<tag_name>
 $ docker run -p <localhost_port>:<docker_port> -it <imageID> go run .
 ```
 ```
-$ container run --publish 8000:8080 --detach --name <the_name_you_want_to_mention> <repository_name>:<tag_name>
+$  docker container run --publish 8000:8080 --detach --name <the_name_you_want_to_mention> <repository_name>:<tag_name>
 ```
 <b>-p or --publish :</b> asks Docker to forward traffic incoming on the localhost’s port , to the container’s port . Containers have their own private set of ports, so if you want to reach one from the network, you have to forward traffic to it in this way. Otherwise, firewall rules will prevent all network traffic from reaching your container, as a default security posture.</br>
 <b>--detach :</b> asks Docker to run this container in the background.</br>
