@@ -8,6 +8,27 @@ $ docker build .
 ```
 $ docker images
 ```
+## delete a image
+```
+$ docker image rm [image name]
+```
+## delete all existing image
+```
+$ docker image rm $(docker images -a -q)
+```
+## Delete a specific container (only if stopped).
+```
+$ docker rm [container name]
+```
+## Delete all containers (only if stopped).
+```
+$ docker rm $(docker ps -a -q)
+
+```
+## Display logs of a container.
+```
+$ docker logs [container name]
+```
 ## all running docker container 
 ```
 $ docker ps
@@ -19,6 +40,10 @@ $ docker ps -a
 ## Build a docker image 
 ```
 $ docker build . -t <repository_name>:<tag_name>
+```
+## alias (a reference) by the name of the TARGET_IMAGE
+```
+$ docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 ```
 ## run docker container in localhost 
 ```
@@ -33,11 +58,15 @@ $  docker container run --publish 8000:8080 --detach --name <the_name_you_want_t
 
 ## The --force option removes the running container.
 ```
-docker container rm <--force nqme_that_given_by_you>
+docker container rm --force <name_that_given_by_you>
 ```
-## stop any docker image 
+## stop any docker container 
 ```
 $ docker stop <imageId>
+```
+## stop all docker container 
+```
+$ docker stop $(docker ps -a -q)
 ```
 ## Use the official image as a parent image
 ```docker
