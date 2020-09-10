@@ -1,6 +1,13 @@
 # postgres-CLI-command
 ---
+## start, stop postgres server 
 
+```shell
+$ sudo service postgresql start
+$ sudo service postgresql stop
+```
+
+---
 ## start postgres 
 
 ```shell
