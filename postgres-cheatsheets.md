@@ -1,10 +1,18 @@
 # postgres-CLI-command
 ---
 
-## start postgres
+## start postgres 
 
 ```shell
-$ sudo -u postgres psql postgres
+$ sudo -u postgres psql
+```
+
+---
+
+## start postgres with existing db
+
+```shell
+$ sudo -u postgres psql db_name
 ```
 
 ---
@@ -12,27 +20,27 @@ $ sudo -u postgres psql postgres
 ## set new password
 
 ```
-$ \password
+postgres=# \password
 ```
 ---
 ## show all database
 ```
-$ \l
+postgres=# \l
 ```
 ---
  
  ## connect to the database
  ```
- $ \c database_name
+ postgres=# \c database_name
  ```
  ---
 ##  show all tables in a database
 ```
-$ \dt
+postgres=# \dt
 ```
 ---
 ##  quit
 ```
-$ \q
+postgres=# \q
 ```
 ---
