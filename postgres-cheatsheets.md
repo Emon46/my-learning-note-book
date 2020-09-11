@@ -7,6 +7,16 @@ $ sudo service postgresql start
 $ sudo service postgresql stop
 ```
 
+## init folder to store data 
+
+```shell
+postgres@ac-all-series: $ /usr/lib/postgresql/10/bin/initdb -D /usr/local/pgsql/data
+```
+
+## Starting the Database Server
+```
+postgres@ac-all-series: $ /usr/lib/postgresql/10/bin/postgres -D /usr/local/pgsql/data
+```
 ---
 ## start postgres 
 
